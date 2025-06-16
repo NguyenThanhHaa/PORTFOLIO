@@ -21,9 +21,9 @@ const Hero = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-8 px-2">
       {/* Blurred blobs */}
-      <img src="src\assets\Star.png" alt="hero-bg" className='absolute top-10 left-10 w-72 h-72 animate-bounce blur-xs z-0' />
-      <img src="src\assets\Starfish.png" alt="hero-bg" className='absolute bottom-10 right-10 w-72 h-72  animate-bounce blur-xs z-0' />
-      <img src="src\assets\Flower.png" alt="hero-bg" className='absolute bottom-8 left-10 w-40 h-40  animate-bounce blur-xs z-0' />
+      <img src="src/assets/Star.png" alt="hero-bg" className='absolute top-10 left-10 w-72 h-72 animate-bounce blur-xs z-0' />
+      <img src="src/assets/Starfish.png" alt="hero-bg" className='absolute bottom-10 right-10 w-72 h-72  animate-bounce blur-xs z-0' />
+      <img src="src/assets/Flower.png" alt="hero-bg" className='absolute bottom-8 left-10 w-40 h-40  animate-bounce blur-xs z-0' />
 
       {/* Glassmorphism main card */}
       <motion.div
