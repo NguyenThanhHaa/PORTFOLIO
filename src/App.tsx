@@ -1,20 +1,24 @@
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import {AppRoutes} from "./AppRoutes.tsx";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { LanguageProvider } from './contexts/LanguageContext';
+import Header from './components/Header';
+import { AppRoutes } from './AppRoutes';
 
-
-const App = () =>  {
-    return (
-        <>
-            <BrowserRouter>
-                    <Routes>
-                        { AppRoutes.map((route, index) => {
-                            const { element, ...rest } = route;
-                            return <Route key={index} {...rest} element={element} />
-                        }) }
-                    </Routes>
-            </BrowserRouter>
-        </>
-    )
+function App() {
+  return (
+    <Router>
+      <LanguageProvider>
+        <div className="min-h-screen">
+          <Header />
+          <Routes>
+            {AppRoutes.map((route, index) => {
+              const { element, ...rest } = route;
+              return <Route key={index} {...rest} element={element} />;
+            })}
+          </Routes>
+        </div>
+      </LanguageProvider>
+    </Router>
+  );
 }
 
-export default App
+export default App;

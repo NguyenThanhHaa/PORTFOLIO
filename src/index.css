@@ -1,1 +1,31 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased text-gray-900;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-sky-800;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  @apply backdrop-blur-lg bg-white/10 border border-white/20 shadow-2xl;
+}
+
+.glass-dark {
+  @apply backdrop-blur-lg bg-black/10 border border-white/10 shadow-2xl;
+}
