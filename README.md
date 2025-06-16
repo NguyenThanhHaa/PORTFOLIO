@@ -1,7 +1,8 @@
 # Portfolio Project
 ![Portfolio Preview](src/assets/my_portfolio_preview.png)
 
-A modern portfolio website built with React, TypeScript, and Vite, featuring Cloudinary integration for image management.
+A modern portfolio website built with React, TypeScript, and Vite, featuring Cloudinary integration for image management.  
+Live at: https://portfolio-hees-projects-ec9f5777.vercel.app/
 
 ## Prerequisites
 
