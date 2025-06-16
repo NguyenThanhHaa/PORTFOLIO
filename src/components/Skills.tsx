@@ -20,25 +20,6 @@ import { FaDatabase } from "react-icons/fa";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { useLanguage } from '../contexts/LanguageContext';
 
-// SVG icon for Zustand
-const ZustandIcon = () => (
-  <svg width="1em" height="1em" viewBox="0 0 256 256" fill="none" xmlns="https://user-images.githubusercontent.com/958486/218346783-72be5ae3-b953-4dd7-b239-788a882fdad6.svg">
-    <rect width="256" height="256" rx="60" fill="#FF9100"/>
-    <path d="M128 60c-30 0-54 24-54 54 0 30 24 54 54 54s54-24 54-54c0-30-24-54-54-54zm0 98c-24.3 0-44-19.7-44-44s19.7-44 44-44 44 19.7 44 44-19.7 44-44 44z" fill="#fff"/>
-    <circle cx="128" cy="114" r="24" fill="#fff"/>
-  </svg>
-);
-
-// SVG icon for Valtio
-const ValtioIcon = () => (
-  <img
-    src="src\assets\valtio-logo.png"
-    alt="Valtio Logo"
-    style={{ width: '1em', height: '1em', objectFit: 'contain' }}
-  />
-  
-);
-
 const Skills = () => {
   const { translations } = useLanguage();
   const techStacks = [
