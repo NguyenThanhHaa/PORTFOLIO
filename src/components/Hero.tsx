@@ -21,9 +21,25 @@ const Hero = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-8 px-2">
       {/* Blurred blobs */}
-      <img src="src/assets/Star.png" alt="hero-bg" className='absolute top-10 left-10 w-72 h-72 animate-bounce blur-xs z-0' />
-      <img src="src/assets/Starfish.png" alt="hero-bg" className='absolute bottom-10 right-10 w-72 h-72  animate-bounce blur-xs z-0' />
-      <img src="src/assets/Flower.png" alt="hero-bg" className='absolute bottom-8 left-10 w-40 h-40  animate-bounce blur-xs z-0' />
+        <AdvancedImage
+            cldImg={cloudinaryConfig.image('Star_tcnplr').resize(fit().width(900).height(600))}
+            className="absolute top-10 left-10 w-72 h-72 animate-bounce blur-xs z-0"
+            alt='star-blob'
+            onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => console.error('Image loading error:', e)}
+        />
+
+        <AdvancedImage
+            cldImg={cloudinaryConfig.image('Starfish_fjwofk').resize(fit().width(900).height(600))}
+            className="absolute bottom-10 right-10 w-72 h-72  animate-bounce blur-xs z-0"
+            alt='starfish-blob'
+            onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => console.error('Image loading error:', e)}
+        />
+        <AdvancedImage
+            cldImg={cloudinaryConfig.image('Flower_t5u9ah').resize(fit().width(900).height(600))}
+            className="absolute bottom-8 left-10 w-40 h-40  animate-bounce blur-xs z-0"
+            alt='flower-blob'
+            onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => console.error('Image loading error:', e)}
+        />
 
       {/* Glassmorphism main card */}
       <motion.div
